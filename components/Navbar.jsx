@@ -3,15 +3,16 @@ import Link from 'next/link';
 
 export default function Navbar() {
   return (
-    <nav className="bg-white shadow-md p-4 sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-blue-600">
+    <nav className="w-full fixed top-0 z-50 bg-white shadow">
+      <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <Link href="/" className="text-2xl font-bold text-blue-700">
           Kreatifguru
         </Link>
-        <div className="space-x-4">
-          <Link href="/about" className="text-gray-700 hover:text-blue-600">Hakkımızda</Link>
-          <Link href="/services" className="text-gray-700 hover:text-blue-600">Hizmetler</Link>
-          <Link href="/contact" className="text-gray-700 hover:text-blue-600">İletişim</Link>
+        <div className="space-x-6 text-sm font-medium hidden md:flex">
+          <Link href="/" className="text-gray-700 hover:text-blue-600 transition">Anasayfa</Link>
+          <Link href="/hakkimizda" className="text-gray-700 hover:text-blue-600 transition">Hakkımızda</Link>
+          <Link href="/hizmetlerimiz" className="text-gray-700 hover:text-blue-600 transition">Hizmetlerimiz</Link>
+          <Link href="/iletisim" className="text-gray-700 hover:text-blue-600 transition">İletişim</Link>
         </div>
       </div>
     </nav>

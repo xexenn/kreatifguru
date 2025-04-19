@@ -1,13 +1,11 @@
 // components/Layout.jsx
 import Navbar from './Navbar';
-import Footer from './Footer';
 
 export default function Layout({ children }) {
   return (
-    <div className="flex flex-col min-h-screen">
+    <>
       <Navbar />
-      <main className="flex-1 px-4 md:px-8 py-8">{children}</main>
-      <Footer />
-    </div>
+      <main className="pt-24">{children}</main>
+    </>
   );
 }
