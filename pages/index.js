@@ -1,6 +1,10 @@
 // pages/index.js
 import { NextSeo } from 'next-seo';
 import HeroSection from '@/components/HeroSection';
+import Hizmetlerimiz from '@/bilesenler/Hizmetlerimiz.jsx';
+
+// sonra:
+<Hizmetlerimiz />
 
 export default function Home() {
   return (
